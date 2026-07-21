@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasticceria De Pellegrin, bar e pasticceria a Lusiana, Altopiano dei 7 Comuni</title>
+<meta name="description" content="Pasticceria De Pellegrin: dolci, torte e gelati artigianali nel cuore di Lusiana, sull&rsquo;Altopiano dei 7 Comuni. Bar, colazioni e torte su ordinazione. Piazza IV Novembre 9, Lusiana Conco (VI).">
+<meta property="og:title" content="Pasticceria De Pellegrin, Lusiana">
+<meta property="og:description" content="Dolci e gelati artigianali che nascono da materie prime di qualit&agrave;, nel cuore dell&rsquo;Altopiano dei 7 Comuni.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/dolci-1.webp">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>#preloader{display:none}#logo-dep{opacity:1}[data-reveal],[data-hero-reveal],[data-media-reveal]{opacity:1 !important}</style></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Pasticceria De Pellegrin",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Piazza IV Novembre 9",
+    "addressLocality": "Lusiana Conco",
+    "addressRegion": "VI",
+    "postalCode": "36046",
+    "addressCountry": "IT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 45.7863089, "longitude": 11.5772206 },
+  "telephone": "+393938858874",
+  "sameAs": [
+    "https://www.instagram.com/pasticceriadepellegrin/",
+    "https://www.facebook.com/1042483392277910/"
+  ]
+}
+</script>
+</head>
+<body>
+
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader" aria-hidden="true">
+  <div id="preloader-stage">
+    <div id="preloader-bar"><div id="preloader-bar-fill"></div></div>
+    <!-- la sac à poche che, spremendosi, riempie la barra di cioccolato -->
+    <svg id="preloader-bag" viewBox="0 0 64 96" aria-hidden="true">
+      <!-- sacchetto di tela -->
+      <path d="M24 64 C16 50 13 36 17 22 C20 11 26 5 32 4 C38 5 44 11 47 22 C51 36 48 50 40 64 Z"
+            fill="#f3ead9" stroke="#d9c7a7" stroke-width="1.6" stroke-linejoin="round"/>
+      <!-- pieghe del tessuto -->
+      <path d="M26 60 C22 48 21 36 24 24" fill="none" stroke="#e4d7bf" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M38 60 C42 48 43 36 40 24" fill="none" stroke="#e4d7bf" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M32 62 C30 48 30 34 32 20" fill="none" stroke="#eadfc9" stroke-width="1.2" stroke-linecap="round"/>
+      <!-- torsione in alto -->
+      <path d="M25 9 C27 2 37 2 39 9 C34 12.5 30 12.5 25 9 Z" fill="#e6d9c2" stroke="#d9c7a7" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M32 4 C33 1.5 35.5 1 37 2.5" fill="none" stroke="#d9c7a7" stroke-width="1.3" stroke-linecap="round"/>
+      <!-- ghiera dorata -->
+      <rect x="23.5" y="62.5" width="17" height="8" rx="3" fill="#b8863f"/>
+      <rect x="26" y="63.8" width="4" height="5.4" rx="2" fill="#d3a55e"/>
+      <!-- beccuccio in metallo -->
+      <path d="M26 70 L38 70 L34.5 88 L29.5 88 Z" fill="#aca396"/>
+      <path d="M30.4 70 L33.6 70 L33 88 L31 88 Z" fill="#cfc8bc"/>
+      <rect x="29" y="86.6" width="6" height="2.2" rx="1.1" fill="#6d655c"/>
+    </svg>
+    <!-- stanghetta: la barra vi si trasforma con un unico gesto fluido,
+         posizionata via JS esattamente sulla stanghetta della D nel logo -->
+    <div id="preloader-stem" aria-hidden="true"></div>
+    <!-- il logo ufficiale: appare al posto della stanghetta e vola sull'header -->
+    <img id="preloader-dep" src="img/logo-dep.webp" width="708" height="522" alt="" aria-hidden="true">
+  </div>
+  <!-- nuvola di parole di pasticceria che si popola in tempo reale -->
+  <div id="preloader-words" aria-hidden="true"></div>
+  <div id="preloader-status">
+    <svg id="preloader-cake" viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M6 27 h20 v-9 a3 3 0 0 0 -3 -3 h-14 a3 3 0 0 0 -3 3 z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="M6 20 c 2 2.4 4 2.4 6 0 c 2 2.4 4 2.4 6 0 c 2 2.4 4 2.4 6 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M16 15 v-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <path id="cake-flame" d="M16 6 c -1.5 2 -1.5 3.4 0 4.4 c 1.5 -1 1.5 -2.4 0 -4.4 z" fill="currentColor"/>
+      <path d="M3 27 h26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+    <span id="preloader-label-text">Torta in preparazione</span>
+  </div>
+</div>
+
+<!-- ============ CURSORE CUSTOM (riempito da JS) ============ -->
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <a class="logo" href="#hero" aria-label="Pasticceria De Pellegrin - torna su">
+    <img id="logo-dep" src="img/logo-dep.webp" width="708" height="522" alt="Pasticceria De Pellegrin">
+  </a>
+  <nav class="site-nav" aria-label="Sezioni del sito">
+    <a href="#ingredienti">Le nostre eccellenze</a>
+    <a href="#staff">La nostra filosofia</a>
+    <a href="#dove">Dove siamo</a>
+  </nav>
+  <div class="header-cta">
+    <a class="social-btn" href="https://www.instagram.com/pasticceriadepellegrin/" target="_blank" rel="noopener" aria-label="Instagram Pasticceria De Pellegrin">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.3" fill="currentColor"/></svg>
+    </a>
+    <a class="social-btn" href="https://www.facebook.com/1042483392277910/" target="_blank" rel="noopener" aria-label="Facebook Pasticceria De Pellegrin">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 8.5 h3 V5 h-3 c-2.2 0 -4 1.8 -4 4 v2.5 H7.5 V15 h3 v6 h3.5 v-6 h3 l.5 -3.5 h-3.5 V9.5 c0 -.6 .4 -1 1 -1 z" fill="currentColor" stroke="none" transform="translate(-1.5 -1)"/></svg>
+    </a>
+    <a class="btn btn-phone" href="tel:+393938858874">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4 h4 l1.5 4.5 -2.2 1.6 a12 12 0 0 0 5.6 5.6 l1.6 -2.2 L20 15 v4 a1.5 1.5 0 0 1 -1.7 1.5 A16.5 16.5 0 0 1 3.5 5.7 1.5 1.5 0 0 1 5 4 z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      <span>Chiama</span>
+    </a>
+  </div>
+  <button class="nav-toggle" aria-label="Apri il menu" aria-expanded="false"><span></span><span></span></button>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <img class="crumbs crumbs-hero" src="img/briciole.webp" alt="" aria-hidden="true">
+  <div class="hero-inner">
+    <p class="hero-eyebrow" data-hero-reveal>Bar &amp; pasticceria &middot; Altopiano dei 7 Comuni</p>
+    <h1 class="hero-title">
+      <span class="hero-line" data-hero-reveal>Dolci fatti</span>
+      <span class="hero-line" data-hero-reveal><em>con amore,</em></span>
+      <span class="hero-line" data-hero-reveal>sull&rsquo;Altopiano dei 7 Comuni.</span>
+    </h1>
+    <div class="hero-cta" data-hero-reveal>
+      <a class="btn btn-solid" href="tel:+393938858874">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4 h4 l1.5 4.5 -2.2 1.6 a12 12 0 0 0 5.6 5.6 l1.6 -2.2 L20 15 v4 a1.5 1.5 0 0 1 -1.7 1.5 A16.5 16.5 0 0 1 3.5 5.7 1.5 1.5 0 0 1 5 4 z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Chiama ora
+      </a>
+      <a class="btn btn-ghost" href="https://wa.me/393938858874?text=Ciao!%20Vorrei%20prenotare%20una%20torta." target="_blank" rel="noopener">Prenota la tua torta</a>
+    </div>
+  </div>
+  <!-- il video al centro, la sala a sinistra, menu e card a destra:
+       tutto appare progressivamente allo scroll, come nel primo blocco del Room -->
+  <div class="hero-media-row">
+    <figure class="hero-side hero-side-left" data-media-reveal>
+      <img src="img/top.webp" alt="La sala del bar con il bancone e la macchina del caff&egrave;" loading="lazy">
+    </figure>
+    <div class="hero-media" data-media-reveal>
+      <video id="hero-video" src="img/hero.mp4" poster="img/dolci-2.webp" autoplay muted loop playsinline></video>
+      <button id="audio-toggle" class="audio-toggle" type="button" aria-label="Attiva l'audio del video" aria-pressed="false">
+        <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9 v6 h4 l5 4 V5 L8 9 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M17 9 l4 6 M21 9 l-4 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9 v6 h4 l5 4 V5 L8 9 Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 9.5 a4 4 0 0 1 0 5 M18.8 7.5 a7 7 0 0 1 0 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="hero-side hero-side-right">
+      <figure data-media-reveal>
+        <img src="img/foto.webp" alt="Il menu De Pellegrin su un tavolino della sala" loading="lazy">
+      </figure>
+      <figure data-media-reveal>
+        <img src="img/iniziale.webp" alt="La card con il logo De Pellegrin" loading="lazy">
+      </figure>
+    </div>
+  </div>
+  <div class="hero-marquee" aria-hidden="false">
+    <div class="hero-marquee-row">
+      <a class="hero-marquee-track" href="tel:+393938858874" aria-label="Chiama la Pasticceria De Pellegrin">
+        <span>Chiama ora: 393 885 8874</span><span class="hero-marquee-dot">&bull;</span><span>Piazza IV Novembre 9, Lusiana</span><span class="hero-marquee-dot">&bull;</span><span>Torte su ordinazione</span><span class="hero-marquee-dot">&bull;</span>
+        <span>Chiama ora: 393 885 8874</span><span class="hero-marquee-dot">&bull;</span><span>Piazza IV Novembre 9, Lusiana</span><span class="hero-marquee-dot">&bull;</span><span>Torte su ordinazione</span><span class="hero-marquee-dot">&bull;</span>
+      </a>
+    </div>
+    <div class="hero-marquee-row hero-marquee-row-2">
+      <a class="hero-marquee-track" href="https://www.instagram.com/pasticceriadepellegrin/" target="_blank" rel="noopener" aria-label="Segui la pasticceria su Instagram">
+        <span>Seguici su Instagram: @pasticceriadepellegrin</span><span class="hero-marquee-dot">&bull;</span><span>Dolci e gelati artigianali</span><span class="hero-marquee-dot">&bull;</span><span>Siamo anche su Facebook</span><span class="hero-marquee-dot">&bull;</span>
+        <span>Seguici su Instagram: @pasticceriadepellegrin</span><span class="hero-marquee-dot">&bull;</span><span>Dolci e gelati artigianali</span><span class="hero-marquee-dot">&bull;</span><span>Siamo anche su Facebook</span><span class="hero-marquee-dot">&bull;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FESTA DELLA MAMMA ============ -->
+<section class="mamma" id="mamma">
+  <img class="crumbs crumbs-ing" src="img/briciole.webp" alt="" aria-hidden="true">
+  <div class="section-head">
+    <p class="section-eyebrow" data-reveal>Edizione speciale</p>
+    <h2 class="section-title" data-reveal>Per la festa della mamma</h2>
+    <p class="section-sub" data-reveal>
+      Alle mamme non serve una scusa, per&ograve; una torta aiuta. Queste sono alcune delle torte
+      che abbiamo preparato per la loro festa: panna montata al momento, frutta fresca e una
+      dedica scritta a mano. Perch&eacute; la mamma &egrave; sempre la mamma:
+      la sua fetta &egrave; sempre la pi&ugrave; grande.
+    </p>
+  </div>
+  <div class="mamma-cards">
+    <figure class="polaroid fan-left" data-reveal>
+      <img src="img/mamma-1.webp" alt="Torta con bign&egrave; e rose: La fetta della mamma" loading="lazy">
+      <figcaption>&laquo;La fetta della mamma&raquo;</figcaption>
+    </figure>
+    <figure class="polaroid polaroid-center" data-reveal>
+      <img src="img/mamma-2.webp" alt="Crostata ai lamponi con dedica: la mamma &egrave; sempre la mamma" loading="lazy">
+      <figcaption>&laquo;La mamma &egrave; sempre la mamma!&raquo;</figcaption>
+    </figure>
+    <figure class="polaroid fan-right" data-reveal>
+      <img src="img/mamma-3.webp" alt="Cream tart a forma di cuore per la festa della mamma" loading="lazy">
+      <figcaption>Un cuore di crema e fragole</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ INGREDIENTI ============ -->
+<section class="ingredienti" id="ingredienti">
+  <div class="section-head">
+    <p class="section-eyebrow" data-reveal>La materia prima</p>
+    <h2 class="section-title" data-reveal>Ingredienti semplici, mai banali</h2>
+  </div>
+
+  <div class="marquees">
+    <div class="marquee" data-dir="left" data-speed="27.2">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="img/ing-burro.webp" alt="Burro" loading="lazy"><span>Burro</span></div>
+        <div class="marquee-item"><img src="img/ing-vaniglia.webp" alt="Vaniglia in bacca" loading="lazy"><span>Vaniglia</span></div>
+        <div class="marquee-item"><img src="img/ing-nocciole.webp" alt="Nocciole" loading="lazy"><span>Nocciole</span></div>
+        <div class="marquee-item"><img src="img/ing-latte.webp" alt="Latte fresco" loading="lazy"><span>Latte</span></div>
+        <div class="marquee-item"><img src="img/ing-cacao.webp" alt="Cacao" loading="lazy"><span>Cacao</span></div>
+        <div class="marquee-item"><img src="img/ing-frutta.webp" alt="Frutta fresca" loading="lazy"><span>Frutta fresca</span></div>
+        <div class="marquee-item"><img src="img/ing-uova.webp" alt="Uova fresche" loading="lazy"><span>Uova</span></div>
+        <div class="marquee-item"><img src="img/ing-pistacchi.webp" alt="Pistacchi" loading="lazy"><span>Pistacchi</span></div>
+      </div>
+    </div>
+    <div class="marquee" data-dir="right" data-speed="22.4">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="img/ing-zucchero.webp" alt="Zucchero" loading="lazy"><span>Zucchero</span></div>
+        <div class="marquee-item"><img src="img/ing-fichi.webp" alt="Fichi" loading="lazy"><span>Fichi</span></div>
+        <div class="marquee-item"><img src="img/ing-caffe.webp" alt="Caff&egrave;" loading="lazy"><span>Caff&egrave;</span></div>
+        <div class="marquee-item"><img src="img/ing-panna.webp" alt="Panna fresca" loading="lazy"><span>Panna</span></div>
+        <div class="marquee-item"><img src="img/ing-cannella.webp" alt="Cannella" loading="lazy"><span>Cannella</span></div>
+        <div class="marquee-item"><img src="img/ing-mandorle.webp" alt="Mandorle" loading="lazy"><span>Mandorle</span></div>
+        <div class="marquee-item"><img src="img/ing-passionfruit.webp" alt="Passion fruit" loading="lazy"><span>Passion fruit</span></div>
+        <div class="marquee-item"><img src="img/ing-lievito.webp" alt="Lievito madre" loading="lazy"><span>Lievito</span></div>
+      </div>
+    </div>
+  </div>
+
+  <p class="scrub-text" data-scrub-text>
+    Tutti i nostri dolci e i nostri gelati nascono cos&igrave;: da materie prime scelte una a una,
+    lavorate ogni mattina nel laboratorio di Lusiana. Niente scorciatoie, niente semilavorati:
+    solo il tempo che serve, e la mano di chi questo mestiere lo ama davvero.
+  </p>
+
+  <div class="arrow-wrap" aria-hidden="true">
+    <svg id="arrow-svg" viewBox="0 0 120 190">
+      <path id="arrow-path" d="M60 8 C 96 42 26 74 58 116 C 74 137 66 152 60 168" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+      <path id="arrow-head" d="M42 154 L 60 176 L 76 152" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <p class="arrow-caption">&hellip;e da qui nascono i dolci De Pellegrin</p>
+  </div>
+
+  <div class="dolci-grid" id="dolci">
+    <figure class="dolci-item d-tall" data-reveal><img src="img/dolci-1.webp" alt="Vetrina con crostatine alla frutta e dolcetti al cioccolato" loading="lazy"></figure>
+    <figure class="dolci-item" data-reveal><img src="img/dolci-2.webp" alt="Dolci della pasticceria De Pellegrin" loading="lazy"></figure>
+    <figure class="dolci-item" data-reveal><img src="img/torta-firma.webp" alt="La torta con la firma De Pellegrin" loading="lazy"></figure>
+    <figure class="dolci-item d-tall" data-reveal><img src="img/dolci-3.webp" alt="Pasticceria fresca del giorno" loading="lazy"></figure>
+    <figure class="dolci-item d-wide" data-reveal><img src="img/dettaglio.webp" alt="Dettaglio di una torta artigianale" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- ============ STAFF ============ -->
+<section class="staff" id="staff">
+  <img class="crumbs crumbs-staff" src="img/briciole.webp" alt="" aria-hidden="true">
+  <div class="section-head">
+    <p class="section-eyebrow" data-reveal>La nostra filosofia</p>
+    <h2 class="section-title" data-reveal>Prima dei dolci, le persone</h2>
+    <p class="section-sub" data-reveal>
+      La pasticceria De Pellegrin &egrave; fatta di persone che tengono davvero ai propri clienti
+      e li accolgono sempre con il sorriso. Entrate per un caff&egrave;, uscirete con un nome in pi&ugrave;
+      da salutare in piazza.
+    </p>
+  </div>
+  <div class="marquee staff-marquee" data-dir="left" data-speed="24">
+    <div class="marquee-track">
+      <div class="marquee-item staff-item"><img src="img/staff-1.webp" alt="La squadra De Pellegrin al completo il giorno dell&rsquo;inaugurazione" loading="lazy"></div>
+      <div class="marquee-item staff-item"><img src="img/staff-2.webp" alt="Sorrisi dietro al bancone" loading="lazy"></div>
+      <div class="marquee-item staff-item"><img src="img/staff-3.webp" alt="Lo staff della pasticceria" loading="lazy"></div>
+      <div class="marquee-item staff-item"><img src="img/staff-4.webp" alt="Un momento di festa con lo staff" loading="lazy"></div>
+      <div class="marquee-item staff-item"><img src="img/staff-5.webp" alt="Accoglienza con il sorriso" loading="lazy"></div>
+      <div class="marquee-item staff-item"><img src="img/staff-6.webp" alt="Lo staff al lavoro" loading="lazy"></div>
+      <div class="marquee-item staff-item"><img src="img/staff-7.webp" alt="La famiglia De Pellegrin" loading="lazy"></div>
+    </div>
+  </div>
+  <p class="staff-hint" data-reveal aria-hidden="true">&larr; trascina &rarr;</p>
+</section>
+
+<!-- ============ MARQUEE CTA ============ -->
+<section class="cta-marquees" aria-label="Contatti rapidi">
+  <a class="cta-row" data-dir="left" data-speed="24" href="tel:+393938858874" aria-label="Chiama la pasticceria">
+    <div class="cta-track"><span>Chiama ora</span><em>393 885 8874</em><span>Chiama ora</span><em>393 885 8874</em><span>Chiama ora</span><em>393 885 8874</em></div>
+  </a>
+  <a class="cta-row cta-row-alt" data-dir="right" data-speed="20.8" href="https://www.instagram.com/pasticceriadepellegrin/" target="_blank" rel="noopener" aria-label="Seguici su Instagram">
+    <div class="cta-track"><span>Seguici su Instagram</span><em>@pasticceriadepellegrin</em><span>Seguici su Instagram</span><em>@pasticceriadepellegrin</em></div>
+  </a>
+  <a class="cta-row" data-dir="left" data-speed="22.4" href="https://www.facebook.com/1042483392277910/" target="_blank" rel="noopener" aria-label="Seguici su Facebook">
+    <div class="cta-track"><span>Siamo anche su Facebook</span><em>Pasticceria De Pellegrin</em><span>Siamo anche su Facebook</span><em>Pasticceria De Pellegrin</em></div>
+  </a>
+</section>
+
+<!-- ============ DOVE SIAMO ============ -->
+<section class="dove" id="dove">
+  <div class="section-head">
+    <p class="section-eyebrow" data-reveal>Dove siamo</p>
+    <h2 class="section-title" data-reveal>In piazza, come una volta</h2>
+  </div>
+  <div class="dove-grid">
+    <div class="mappa" data-reveal>
+      <div class="mappa-tiles" aria-label="Vista satellitare di Lusiana">
+        <img src="img/map/tile_0_0.jpg" alt=""><img src="img/map/tile_1_0.jpg" alt=""><img src="img/map/tile_2_0.jpg" alt="">
+        <img src="img/map/tile_0_1.jpg" alt=""><img src="img/map/tile_1_1.jpg" alt=""><img src="img/map/tile_2_1.jpg" alt="">
+        <img src="img/map/tile_0_2.jpg" alt=""><img src="img/map/tile_1_2.jpg" alt=""><img src="img/map/tile_2_2.jpg" alt="">
+      </div>
+      <svg class="mappa-overlay" viewBox="0 0 768 768" aria-hidden="true">
+        <!-- alone + punto sulla pasticceria (Piazza IV Novembre 9) -->
+        <circle class="map-pulse" cx="291" cy="306" r="14"/>
+        <circle class="map-dot" cx="291" cy="306" r="7"/>
+        <!-- freccia verso la piazza -->
+        <path class="map-arrow" d="M170 500 C 200 450 230 400 272 336" fill="none"/>
+        <path class="map-arrow" d="M258 352 L 272 336 L 276 357" fill="none"/>
+        <!-- freccia verso la pasticceria -->
+        <path class="map-arrow map-arrow-2" d="M520 190 C 470 210 380 250 312 294" fill="none"/>
+        <path class="map-arrow map-arrow-2" d="M330 279 L 312 294 L 335 299" fill="none"/>
+      </svg>
+      <span class="map-label map-label-piazza">La piazza di Lusiana</span>
+      <span class="map-label map-label-bar">Pasticceria De Pellegrin</span>
+      <span class="map-edge map-edge-n">Asiago &middot; Gallio</span>
+      <span class="map-edge map-edge-s">Marostica &middot; Bassano</span>
+      <span class="map-edge map-edge-w">Caltrano &middot; Calvene</span>
+      <span class="map-edge map-edge-e">Conco &middot; Valbrenta</span>
+      <!-- bussola a tema pasticceria: corona di crostata, codette e ciliegina al centro -->
+      <svg class="map-compass" viewBox="0 0 100 100" aria-hidden="true">
+        <g fill="#f6efe3" stroke="#d9c7a7" stroke-width="1.5">
+          <circle cx="90" cy="50" r="7"/><circle cx="84.6" cy="70" r="7"/><circle cx="70" cy="84.6" r="7"/>
+          <circle cx="50" cy="90" r="7"/><circle cx="30" cy="84.6" r="7"/><circle cx="15.4" cy="70" r="7"/>
+          <circle cx="10" cy="50" r="7"/><circle cx="15.4" cy="30" r="7"/><circle cx="30" cy="15.4" r="7"/>
+          <circle cx="50" cy="10" r="7"/><circle cx="70" cy="15.4" r="7"/><circle cx="84.6" cy="30" r="7"/>
+        </g>
+        <circle cx="50" cy="50" r="40" fill="#f6efe3"/>
+        <circle cx="50" cy="50" r="32.5" fill="#fffdf8" stroke="#d9c7a7" stroke-width="1.4"/>
+        <!-- codette di zucchero tra i punti cardinali -->
+        <g>
+          <rect x="48.9" y="21" width="2.2" height="6" rx="1.1" fill="#b8863f" transform="rotate(30 50 50)"/>
+          <rect x="48.9" y="21" width="2.2" height="6" rx="1.1" fill="#d9c7a7" transform="rotate(60 50 50)"/>
+          <rect x="48.9" y="21" width="2.2" height="6" rx="1.1" fill="#4a3a30" transform="rotate(120 50 50)"/>
+          <rect x="48.9" y="21" width="2.2" height="6" rx="1.1" fill="#b8863f" transform="rotate(150 50 50)"/>
+          <rect x="48.9" y="21" width="2.2" height="6" rx="1.1" fill="#d9c7a7" transform="rotate(210 50 50)"/>
+          <rect x="48.9" y="21" width="2.2" height="6" rx="1.1" fill="#4a3a30" transform="rotate(240 50 50)"/>
+          <rect x="48.9" y="21" width="2.2" height="6" rx="1.1" fill="#b8863f" transform="rotate(300 50 50)"/>
+          <rect x="48.9" y="21" width="2.2" height="6" rx="1.1" fill="#d9c7a7" transform="rotate(330 50 50)"/>
+        </g>
+        <g font-family="Fraunces, serif" font-style="italic" font-size="11" fill="#4a3a30" text-anchor="middle">
+          <text x="50" y="20.5">N</text>
+          <text x="82" y="53.6">E</text>
+          <text x="50" y="89">S</text>
+          <text x="18" y="53.6">O</text>
+        </g>
+        <g class="compass-needle">
+          <path d="M50 27 L55.5 50 L44.5 50 Z" fill="#b8863f"/>
+          <path d="M50 73 L55.5 50 L44.5 50 Z" fill="#4a3a30"/>
+        </g>
+        <!-- la ciliegina al centro -->
+        <circle cx="50" cy="50" r="4.6" fill="#b62d32"/>
+        <circle cx="48.6" cy="48.6" r="1.3" fill="#e8938f"/>
+      </svg>
+      <span class="map-credit">Immagini satellitari &copy; Esri World Imagery</span>
+    </div>
+    <aside class="dove-info" data-reveal-group>
+      <h3>Pasticceria De Pellegrin</h3>
+      <p class="dove-indirizzo">Piazza IV Novembre 9<br>36046 Lusiana Conco (VI)<br>Altopiano dei 7 Comuni</p>
+      <p class="dove-tel"><a href="tel:+393938858874">393 885 8874</a></p>
+      <!-- TODO: confermare orari reali con il titolare -->
+      <table class="orari" aria-label="Orari di apertura">
+        <tr><th>Luned&igrave;</th><td>chiuso</td></tr>
+        <tr><th>Da marted&igrave; a sabato</th><td>dalle 6:30 alle 19:30</td></tr>
+        <tr><th>Domenica</th><td>dalle 7:00 alle 19:30</td></tr>
+      </table>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7863089,11.5772206" target="_blank" rel="noopener">Indicazioni stradali</a>
+    </aside>
+  </div>
+</section>
+
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <img class="footer-dep" src="img/logo-dep.webp" width="708" height="522" alt="Pasticceria De Pellegrin">
+  <p class="footer-claim">Dolci e gelati artigianali, dal 30 maggio a Lusiana.</p>
+  <div class="footer-links">
+    <a href="tel:+393938858874">393 885 8874</a>
+    <a href="https://www.instagram.com/pasticceriadepellegrin/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/1042483392277910/" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://www.google.com/maps/dir/?api=1&amp;destination=45.7863089,11.5772206" target="_blank" rel="noopener">Indicazioni</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 Pasticceria De Pellegrin &middot; Piazza IV Novembre 9, Lusiana Conco (VI)</p>
+</footer>
+
+<script src="libs/gsap.min.js"></script>
+<script src="libs/ScrollTrigger.min.js"></script>
+<script src="libs/lenis.min.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
